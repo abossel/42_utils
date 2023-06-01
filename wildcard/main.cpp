@@ -29,6 +29,8 @@ int main()
 	test_wc("www.example.com", "www*??*xample?com");
 	test_wc("*www.example.com", "\\*www.example.com");
 	test_wc("\\*?*?*?*?www.?example*.com*", "\\\\*\\?\\*\\?\\*\\?\\*\\?ww*??\\?*xample\\*?com\\*");
+	test_wc("www.example.com", "w*");
+	test_wc("www.example.com", "*m");
 
 	return (0);
 }
